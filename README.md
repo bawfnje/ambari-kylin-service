@@ -7,6 +7,10 @@
 
 ## Setup
 
+#### Prepare kylin、spark tar
+kylin: https://archive.apache.org/dist/kylin/apache-kylin-2.6.1/apache-kylin-2.6.1-bin-hadoop3.tar.gz
+spark: https://archive.apache.org/dist/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
+
 #### Prepare spark package 
 Configure ***spark-2.3.2-bin-hadoop2.7.tgz*** download url. Kylin must used special spark package to RUNNING successful.
 
