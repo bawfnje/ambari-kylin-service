@@ -10,7 +10,7 @@ tmp_dir = Script.get_tmp_dir()
 
 ambari_server_hostname = config['ambariLevelParams']['ambari_server_host']
 kylin_project_name = 'apache-kylin-2.6.1-bin-hadoop3'
-# |grep "ambari" 仅限带ambari目录的下载服务器加速下载
+# |grep "ambari" Accelerated download only for download servers with ambari directory
 kylin_download = 'cat /etc/yum.repos.d/ambari.repo | grep "baseurl" |grep "ambari" | awk -F \'=\' \'{print $2"/kylin/apache-kylin-2.6.1-bin-hadoop3.tar.gz"}\''
 
 kylin_install_dir = config['configurations']['kylin']['kylin_install_dir']
