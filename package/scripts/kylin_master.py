@@ -25,6 +25,7 @@ class KylinMaster(Script):
         Execute('mkdir -p {0}/hadoop-conf'.format(params.kylin_install_dir))
         # Create kylin user and group
         try:
+            Execute('userdel -r kylin')
             Execute('groupadd kylin && useradd kylin -g kylin')
         except:
             print " "
