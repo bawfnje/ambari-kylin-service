@@ -17,7 +17,7 @@ Configure ***spark-2.3.2-bin-hadoop2.7.tgz*** download url. Kylin must used spec
 VERSION=`hdp-select status hadoop-client | sed 's/hadoop-client - \([0-9]\.[0-9]\).*/\1/'`
 echo $VERSION
 sudo rm -rf /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/KYLIN  
-sudo git clone https://github.com/tkiyer/ambari-kylin-service.git /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/KYLIN
+sudo git clone https://github.com/bawfnje/ambari-kylin-service.git /var/lib/ambari-server/resources/stacks/HDP/$VERSION/services/KYLIN
 ```
 
 - Restart Ambari
