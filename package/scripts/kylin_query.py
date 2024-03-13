@@ -20,6 +20,7 @@ class KylinQuery(Script):
         # Remove kylin installation file
         Execute('rm -rf /tmp/kylin.tar.gz')
         # Rename kylin installation dir
+        Execute('rm -rf {1}'.format(params.kylin_project_name, params.kylin_install_dir))
         Execute('mv /usr/local/{0} {1}'.format(params.kylin_project_name, params.kylin_install_dir))
         # Create Hadoop conf dir
         Execute('mkdir -p {0}/hadoop-conf'.format(params.kylin_install_dir))
