@@ -12,7 +12,7 @@ ambari_server_hostname = config['ambariLevelParams']['ambari_server_host']
 # kylin_project_name = 'apache-kylin-2.6.1-bin-hadoop3'
 kylin_project_name = config['configurations']['kylin']['kylin_project_name']
 # |grep "ambari" Accelerated download only for download servers with ambari directory
-kylin_download = 'cat /etc/yum.repos.d/ambari.repo | grep "baseurl" |grep "ambari" | awk -F \'=\' \'{print $2"/kylin/'config['configurations']['kylin']['kylin_project_name']'.tar.gz"}\''
+kylin_download = format('cat /etc/yum.repos.d/ambari.repo | grep "baseurl" |grep "ambari" | awk -F \'=\' \'{print $2"/kylin/{kylin_project_name}.tar.gz"}\'')
 
 kylin_install_dir = config['configurations']['kylin']['kylin_install_dir']
 kylin_log_dir = config['configurations']['kylin']['kylin_log_dir']
