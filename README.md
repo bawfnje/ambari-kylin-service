@@ -1,14 +1,14 @@
 ## Ambari Service for Kylin
 
 ## Version
-   + Kylin 2.6.1 (With Hadoop 3.x version)
+   + Kylin 2.6.6 (With Hadoop 3.x version)
    + Ambari 2.7+
    + HDP 3.1.0
 
 ## Setup
 
 #### Prepare kylin、spark tar
-   + kylin: https://archive.apache.org/dist/kylin/apache-kylin-2.6.1/apache-kylin-2.6.1-bin-hadoop3.tar.gz
+   + kylin: https://archive.apache.org/dist/kylin/apache-kylin-2.6.6/apache-kylin-2.6.6-bin-hadoop3.tar.gz
    + spark: https://archive.apache.org/dist/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgz
 
 #### Prepare spark package 
