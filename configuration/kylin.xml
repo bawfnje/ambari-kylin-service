@@ -18,12 +18,12 @@
     <description>Kerberos principal name for Kylin</description>
   </property>
 
-    <property>
+<!--     <property>
         <name>kylin_project_name</name>
         <display-name>Kylin Project Name</display-name>
         <value>apache-kylin-2.6.6-bin-hadoop3</value>
         <description>Support kylin2.6+</description>
-    </property>
+    </property> -->
   
     <property>
         <name>kylin_install_dir</name>
